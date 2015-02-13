@@ -80,8 +80,6 @@ where `map` denotes the name of the 2D map (Step 3) and `config` denotes an obje
 ![marker](https://raw.githubusercontent.com/kunzel/soma/master/doc/images/soma_roi.png)
 
 
-for leeds use:
-
     ```
    $ roscore
     ```
