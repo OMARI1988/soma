@@ -31,7 +31,7 @@ Getting started (general steps)
     ```
 3. Run the map_server with a 2D map:
   ```
-  $ rosrun map_server map_server <map.yaml>
+  $ rosrun map_server map_server /home/omari/robot_files/cs_lab_final.yaml
   ```
 where `map.yaml` specifies the map you want to load.
     
@@ -48,7 +48,7 @@ SOMA object manager
 5. Run the SOMA object manager:
 
     ```
-    $ rosrun soma_manager soma.py <map> <config>
+    $ rosrun soma_manager soma.py  map1 test1
     ```
 where `map` denotes the name of the 2D map (Step 3) and `config` denotes an object configuration within this map. By default, the configuration file `soma_objects/config/default.json` is used to initialize the list of available object types. Alternatively, the following command can be used to use a different configuration file:
 
@@ -78,10 +78,3 @@ where `map` denotes the name of the 2D map (Step 3) and `config` denotes an obje
 
 
 ![marker](https://raw.githubusercontent.com/kunzel/soma/master/doc/images/soma_roi.png)
-
-
-$ roscore
-$ roslaunch mongodb_store datacentre.launch
-$ rosrun map_server map_server /home/omari/robot_files/cs_lab_final.yaml
-$ rosrun rviz rviz
-$ rosrun soma_manager soma.py map1 test1
