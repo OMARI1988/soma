@@ -80,22 +80,8 @@ where `map` denotes the name of the 2D map (Step 3) and `config` denotes an obje
 ![marker](https://raw.githubusercontent.com/kunzel/soma/master/doc/images/soma_roi.png)
 
 
-    ```
-   $ roscore
-    ```
-    
-    ```
-    $ roslaunch mongodb_store datacentre.launch
-    ```
-    
-  ```
-  $ rosrun map_server map_server /home/omari/robot_files/cs_lab_final.yaml
-  ```
-
-  ```
-  $ rosrun rviz rviz
-  ```
-
-
-    ```
-    $ rosrun soma_manager soma.py map1 test1
+$ roscore
+$ roslaunch mongodb_store datacentre.launch
+$ rosrun map_server map_server /home/omari/robot_files/cs_lab_final.yaml
+$ rosrun rviz rviz
+$ rosrun soma_manager soma.py map1 test1
